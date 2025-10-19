@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Font with Tailwind CDN</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              ptserif: ['"PT Serif"', "serif"],
+              poppins: ['"Poppins"', "sans-serif"],
+            },
+            colors: {
+              primary: "#2563EB",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="bg-gray-50 p-10">
+    <h1 class="font-ptserif text-5xl text-primary">PT Serif Heading</h1>
+    <p class="font-poppins text-gray-700 mt-4">
+      This paragraph is using the Poppins font with Tailwind CSS.
+    </p>
+  </body>
+</html>
