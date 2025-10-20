@@ -389,50 +389,74 @@
         </p>
 
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 items-center py-10 md:py-20"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-10 items-center py-10 md:py-20 px-4"
         >
-          <div class="">
-            <img
-              class="w-full h-[350px] lg:h-[480px] object-cover"
-              src="./assets/img/ravioli.jpg"
-              alt=""
-            />
+          <div class="relative group">
+            <div
+              class="relative before:absolute before:h-full before:w-full before:top-0 before:left-0 before:bg-[linear-gradient(rgba(21,21,21,0)_38.12%,_rgba(21,21,21,0.365)_100%)] before:z-[2] before:opacity-0 group-hover:before:opacity-100 before:duration-300"
+            >
+              <img
+                class="w-full h-[280px] sm:h-[350px] lg:h-[400px] object-cover"
+                src="./assets/img/ravioli.jpg"
+                alt=""
+              />
+            </div>
             <h3
               style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
-              class="text-3xl text-center pt-6 hover:text-[#41A451] cursor-pointer duration-300"
+              class="text-2xl md:text-3xl text-center pt-6 hover:text-[#41A451] cursor-pointer duration-300"
             >
               Ravioli
             </h3>
             <p class="text-[#41A451] text-lg text-center pt-2">$8</p>
+            <a
+              href="#"
+              class="absolute bottom-[180px] left-1/2 -translate-y-full opacity-0 group-hover:opacity-100 group-hover:translate-y-0 -translate-x-1/2 duration-300 bg-[#41A451] text-white px-6 py-2 font-semibold cursor-pointer z-[3] hover:bg-[#444141] text-sm sm:text-base"
+              >ORDER NOW</a
+            >
           </div>
-          <div class="">
-            <img
-              class="w-full h-[350px] lg:h-[480px] object-cover"
-              src="./assets/img/pasta.jpg"
-              alt=""
-            />
+          <div class="relative group">
+            <div
+              class="relative before:absolute before:h-full before:w-full before:top-0 before:left-0 before:bg-[linear-gradient(rgba(21,21,21,0)_38.12%,_rgba(21,21,21,0.365)_100%)] before:z-[2] before:opacity-0 group-hover:before:opacity-100 before:duration-300"
+            >
+              <img
+                class="w-full h-[280px] sm:h-[350px] lg:h-[400px] object-cover"
+                src="./assets/img/pasta.jpg"
+                alt=""
+              />
+            </div>
             <h3
               style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
-              class="text-3xl text-center pt-6 hover:text-[#41A451] cursor-pointer duration-300"
+              class="text-2xl md:text-3xl text-center pt-6 hover:text-[#41A451] cursor-pointer duration-300"
             >
               Black Pasta
             </h3>
-            <p class="text-[#41A451] text-lg text-center pt-2">$8</p>
+            <p class="text-[#41A451] text-lg text-center pt-2">$13</p>
+            <a
+              href="#"
+              class="absolute bottom-[180px] left-1/2 -translate-y-full opacity-0 group-hover:opacity-100 group-hover:translate-y-0 -translate-x-1/2 duration-300 bg-[#41A451] text-white px-6 py-2 font-semibold cursor-pointer z-[3] hover:bg-[#444141] text-sm sm:text-base"
+              >ORDER NOW</a
+            >
           </div>
-          <div class="relative">
-            <img
-              class="w-full h-[350px] lg:h-[480px] object-cover"
-              src="./assets/img/geleto.jpg"
-              alt=""
-            />
+          <div class="relative group">
+            <div
+              class="relative before:absolute before:h-full before:w-full before:top-0 before:left-0 before:bg-[linear-gradient(rgba(21,21,21,0)_38.12%,_rgba(21,21,21,0.365)_100%)] before:z-[2] before:opacity-0 group-hover:before:opacity-100 before:duration-300"
+            >
+              <img
+                class="w-full h-[280px] sm:h-[350px] lg:h-[400px] object-cover relative z-[1]"
+                src="./assets/img/geleto.jpg"
+                alt=""
+              />
+            </div>
             <h3
               style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
-              class="text-3xl text-center pt-6 hover:text-[#41A451] cursor-pointer duration-300"
+              class="text-2xl md:text-3xl text-center pt-6 hover:text-[#41A451] cursor-pointer duration-300"
             >
               Geleto
             </h3>
-            <p class="text-[#41A451] text-lg text-center pt-2">$8</p>
-            <a class="absolute bottom-[200px] left-1/2 -translate-x-1/2 bg-[#41A451] text-white px-6 py-2"
+            <p class="text-[#41A451] text-lg text-center pt-2">$4</p>
+            <a
+              href="#"
+              class="absolute bottom-[180px] left-1/2 -translate-y-full opacity-0 group-hover:opacity-100 group-hover:translate-y-0 -translate-x-1/2 duration-300 bg-[#41A451] text-white px-6 py-2 font-semibold cursor-pointer z-[3] hover:bg-[#444141] text-sm sm:text-base"
               >ORDER NOW</a
             >
           </div>
@@ -441,8 +465,97 @@
     </section>
 
     <!-- Menu Section  -->
-    <section>
-      <h2>Our Restaurant Menu</h2>
+    <section class="py-15 md:py-20 p-4 bg-gray-100">
+      <div class="max-w-7xl mx-auto">
+        <h2
+          class="text-2xl md:text-5xl text-center font-bold text-[#151515]"
+          style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+        >
+          Our Restaurant Menu
+        </h2>
+
+        <div class="my-10 rounded-lg overflow-hidden bg-white shadow-lg">
+          <div class="bg-[#323232] text-[rgba(255,255,255,0.4)] p-4 md:py-10">
+            <ul
+              class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-20 uppercase"
+            >
+              <li
+                class="md:text-lg font-semibold cursor-pointer text-white hover:text-white duration-300"
+              >
+                Mains
+              </li>
+              <li
+                class="md:text-lg font-semibold cursor-pointer hover:text-white duration-300"
+              >
+                Desserts
+              </li>
+              <li
+                class="md:text-lg font-semibold cursor-pointer hover:text-white duration-300"
+              >
+                Drinks
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col items-center py-15 space-y-10">
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$10.89</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Aperol Spritz
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                The most popular drink in Venice: refreshing, easygoing &…happy!
+                Perfect to be sipped as an “Aperitivo” just before dinner -
+                delightful!
+              </p>
+            </div>
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$10.89</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Aperol Spritz
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                The most popular drink in Venice: refreshing, easygoing &…happy!
+                Perfect to be sipped as an “Aperitivo” just before dinner -
+                delightful!
+              </p>
+            </div>
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$10.89</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Aperol Spritz
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                The most popular drink in Venice: refreshing, easygoing &…happy!
+                Perfect to be sipped as an “Aperitivo” just before dinner -
+                delightful!
+              </p>
+            </div>
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$10.89</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Aperol Spritz
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                The most popular drink in Venice: refreshing, easygoing &…happy!
+                Perfect to be sipped as an “Aperitivo” just before dinner -
+                delightful!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script>
