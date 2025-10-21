@@ -85,9 +85,6 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
     <!-- Local Business / Restaurant schema -->
     <script type="application/ld+json">
       {
@@ -160,19 +157,6 @@
     <!-- Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- Tailwind Config -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              ptserif: ['"PT Serif"', '"Times New Roman"', "Times", "serif"],
-              poppins: ['"Poppins"', "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
     <!-- Google Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -180,20 +164,10 @@
       href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <style>
-    /* Needed for 3D flip */
-    .preserve-3d {
-      transform-style: preserve-3d;
-    }
-    .backface-hidden {
-      backface-visibility: hidden;
-    }
-    .flip {
-      transform: rotateY(180deg);
-      transition: transform 0.6s ease;
-    }
-  </style>
   <body style="font-family: 'Poppins', 'sans-serif'">
     <!-- Navbar -->
     <nav
@@ -555,8 +529,197 @@
             </div>
           </div>
         </div>
+        <div class="text-center mt-3">
+          <a
+            href="#"
+            class="px-10 py-3 bg-black text-white duration-300 hover:bg-[#41A451]"
+            >See More</a
+          >
+        </div>
       </div>
     </section>
+
+    <!-- Service Section  -->
+    <section class="py-10 md:py-20 p-4">
+      <div
+        class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+      >
+        <div
+          class="flex flex-col items-center justify-center space-y-6 p-4 group"
+        >
+          <div
+            class="w-full text-center relative before:absolute before:border-l-[10px] before:border-l-transparent before:border-r-[10px] before:border-r-transparent before:border-b-[18px] before:border-[#d0efd5] before:top-[33%] before:translate-[0] before:left-[56%] z-[1] before:rotate-[137.76deg] group-hover:before:translate-[-15px] before:duration-300 group-hover:before:rotate-[175deg]"
+          >
+            <span
+              class="icon-xl restaurant-icon-30 text-[90px] leading-[1] z-[2] relative"
+            ></span>
+          </div>
+
+          <h4
+            class="text-3xl hover:text-[#41A451] duration-300 cursor-pointer"
+            style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+          >
+            Friendly Team
+          </h4>
+          <p
+            class="text-center max-w-[330px] leading-6 text-[rgba(0,0,0,0.6)] text-sm"
+          >
+            Pesto’s staff is polite and courteous. We strive for excellence both
+            in the quality of our food and interaction with you.
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center space-y-6 p-4 group"
+        >
+          <div
+            class="w-full text-center relative before:absolute before:size-5 before:rounded-full before:top-[33%] before:translate-[0] before:left-[56%] z-[1] before:rotate-[137.76deg] group-hover:before:translate-x-[-45px] group-hover:before:translate-y-[2px] before:duration-600 group-hover:before:rotate-[175deg] before:bg-[#d0efd5]"
+          >
+            <span
+              class="icon-xl restaurant-icon-36 text-[90px] relative leading-[1]"
+            ></span>
+          </div>
+          <h4
+            class="text-3xl hover:text-[#41A451] duration-300 cursor-pointer"
+            style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+          >
+            Fresh Food
+          </h4>
+          <p
+            class="text-center max-w-[330px] leading-6 text-[rgba(0,0,0,0.6)] text-sm"
+          >
+            All our food is freshly prepared on a daily basis ensuring that you
+            receive only the finest cuisine, delicious to taste.
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center space-y-6 p-4 group"
+        >
+          <div
+            class="w-full text-center relative before:absolute before:size-4 before:top-[33%] before:translate-y-[0] before:left-[53%] z-[1] group-hover:before:translate-x-[-40px] before:duration-600 before:rotate-[45deg] group-hover:before:rotate-[-90deg] before:bg-[#d0efd5] z-[1]"
+          >
+            <span
+              class="icon-xl restaurant-icon-27 leading-[1] text-[90px] z-[2] relative"
+            ></span>
+          </div>
+          <h4
+            class="text-3xl hover:text-[#41A451] duration-300 cursor-pointer"
+            style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+          >
+            Quality Cuisine
+          </h4>
+          <p
+            class="text-center max-w-[330px] leading-6 text-[rgba(0,0,0,0.6)] text-sm"
+          >
+            We provide a wide variety of quality dishes for our clients so that
+            they could enjoy the best of Italian cusine.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offer Section  -->
+    <section
+      class="py-20 md:py-40 p-4 bg-cover bg-center bg-no-repeat"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url('./assets/img/offer.jpg');
+      "
+    >
+      <div class="container mx-auto text-center">
+        <h3
+          class="text-[#41A451] text-lg md:text-2xl font-bold"
+          style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+        >
+          Only 3 days
+        </h3>
+        <h3
+          class="mt-2 text-[26px] sm:text-[36px] md:text-[45px] uppercase text-white font-bold"
+          style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+        >
+          20% Off Selected dishes
+        </h3>
+        <button
+          class="bg-white py-2 px-4 md:px-8 md:py-4 text-sm md:text-base mt-6 cursor-pointer uppercase duration-300 hover:bg-[#151515] hover:text-white font-semibold"
+        >
+          Order Now
+        </button>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section>
+      https://livedemo00.template-help.com/wt_prod-21763/contacts.html
+    </section>
+
+    <!-- footer section -->
+    <footer class="py-10 md:py-20 bg-[#323232] text-white text-center">
+      <div class="max-w-7xl mx-auto">
+        <h4
+          class="text-4xl"
+          style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+        >
+          Chutneys
+        </h4>
+        <p class="text-sm text-[rgba(255,255,255,0.6)] mt-1">Indian Takeaway</p>
+
+        <ul class="mt-10 flex justify-center items-center flex-col md:flex-row">
+          <li
+            class="md:border-r border-gray-300 px-4 py-2 md:py-0 duration-200 hover:text-[#41A451] font-medium uppercase"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="md:border-r border-gray-300 px-4 py-2 md:py-0 duration-200 hover:text-[#41A451] font-medium uppercase"
+          >
+            <a href="#">Contacts</a>
+          </li>
+          <li
+            class="md:border-r border-gray-300 px-4 py-2 md:py-0 duration-200 hover:text-[#41A451] font-medium uppercase"
+          >
+            <a href="#">Gallery</a>
+          </li>
+          <li
+            class="px-4 py-2 md:py-0 duration-200 hover:text-[#41A451] font-medium uppercase"
+          >
+            <a href="#">About</a>
+          </li>
+        </ul>
+
+        <div class="mt-8 md:mt-16 flex gap-8 justify-center items-center">
+          <a
+            href="#"
+            class="nav-link bg-[rgba(255,255,255,0.1)] hover:bg-[#41A451] duration-300 size-10 md:size-12 rounded-full shrink-0 flex justify-center items-center"
+          >
+            <i class="fa-brands fa-facebook-f text-lg md:text-xl"></i>
+          </a>
+          <a
+            href="#"
+            class="nav-link bg-[rgba(255,255,255,0.1)] hover:bg-[#41A451] duration-300 size-10 md:size-12 rounded-full shrink-0 flex justify-center items-center"
+          >
+            <i class="fa-brands fa-instagram text-lg md:text-xl"></i>
+          </a>
+          <a
+            href="#"
+            class="nav-link bg-[rgba(255,255,255,0.1)] hover:bg-[#41A451] duration-300 size-10 md:size-12 rounded-full shrink-0 flex justify-center items-center"
+          >
+            <i class="fa-brands fa-x-twitter text-lg md:text-xl"></i>
+          </a>
+          <a
+            href="#"
+            class="nav-link bg-[rgba(255,255,255,0.1)] hover:bg-[#41A451] duration-300 size-10 md:size-12 rounded-full shrink-0 flex justify-center items-center"
+          >
+            <i class="fa-brands fa-youtube text-lg md:text-xl"></i>
+          </a>
+        </div>
+
+        <p class="mt-10 text-center text-sm">
+          &copy; 2025 Chutneys Indians Takeaway - All right reserved
+        </p>
+      </div>
+    </footer>
 
     <script>
       const navbar = document.getElementById("navbar");
