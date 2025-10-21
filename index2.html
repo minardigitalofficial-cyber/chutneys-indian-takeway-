@@ -35,9 +35,156 @@
   </head>
 
   <body class="bg-gray-50 p-10">
-    <h1 class="font-ptserif text-5xl text-primary">PT Serif Heading</h1>
-    <p class="font-poppins text-gray-700 mt-4">
-      This paragraph is using the Poppins font with Tailwind CSS.
-    </p>
+    <section class="py-15 md:py-20 p-4 bg-gray-100">
+      <div class="max-w-7xl mx-auto">
+        <h2
+          class="text-2xl md:text-5xl text-center font-bold text-[#151515]"
+          style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+        >
+          Our Restaurant Menu
+        </h2>
+
+        <div class="my-10 rounded-lg overflow-hidden bg-white shadow-lg">
+          <!-- Tabs -->
+          <div class="bg-[#323232] text-[rgba(255,255,255,0.4)] p-4 md:py-10">
+            <ul
+              class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-20 uppercase"
+            >
+              <li
+                class="tab-item md:text-lg font-semibold cursor-pointer text-white duration-300 active-tab"
+                data-target="mains"
+              >
+                Mains
+              </li>
+              <li
+                class="tab-item md:text-lg font-semibold cursor-pointer hover:text-white duration-300"
+                data-target="desserts"
+              >
+                Desserts
+              </li>
+              <li
+                class="tab-item md:text-lg font-semibold cursor-pointer hover:text-white duration-300"
+                data-target="drinks"
+              >
+                Drinks
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mains -->
+          <div
+            class="tab-content mains opacity-100 transition-opacity duration-500 flex flex-col items-center py-15 space-y-10"
+          >
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$10.89</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Grilled Chicken
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                Tender grilled chicken served with seasonal vegetables.
+              </p>
+            </div>
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$12.50</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Beef Steak
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                Juicy steak cooked to perfection with pepper sauce.
+              </p>
+            </div>
+          </div>
+
+          <!-- Desserts -->
+          <div
+            class="tab-content desserts hidden opacity-0 transition-opacity duration-500 flex flex-col items-center py-15 space-y-10"
+          >
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$6.50</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Chocolate Lava Cake
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                A rich chocolate cake with molten center, served warm.
+              </p>
+            </div>
+          </div>
+
+          <!-- Drinks -->
+          <div
+            class="tab-content drinks hidden opacity-0 transition-opacity duration-500 flex flex-col items-center py-15 space-y-10"
+          >
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$4.50</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Aperol Spritz
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                The most popular drink in Venice: refreshing and delightful!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-3">
+          <a
+            href="#"
+            class="px-10 py-3 bg-black text-white duration-300 hover:bg-[#41A451]"
+            >See More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Script -->
+    <script>
+      const tabs = document.querySelectorAll(".tab-item");
+      const contents = document.querySelectorAll(".tab-content");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          // Remove active class from all tabs
+          tabs.forEach((t) => t.classList.remove("active-tab", "text-white"));
+          tab.classList.add("active-tab", "text-white");
+
+          const target = tab.getAttribute("data-target");
+
+          contents.forEach((content) => {
+            if (content.classList.contains(target)) {
+              // Show with fade-in
+              content.classList.remove("hidden");
+              setTimeout(() => {
+                content.classList.add("opacity-100");
+                content.classList.remove("opacity-0");
+              }, 10);
+            } else {
+              // Fade-out then hide
+              content.classList.add("opacity-0");
+              content.classList.remove("opacity-100");
+              setTimeout(() => content.classList.add("hidden"), 500);
+            }
+          });
+        });
+      });
+    </script>
+
+    <!-- Active Tab Color -->
+    <style>
+      .active-tab {
+        color: #41a451 !important;
+      }
+    </style>
   </body>
 </html>

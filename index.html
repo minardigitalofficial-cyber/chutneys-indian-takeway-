@@ -449,40 +449,46 @@
         </h2>
 
         <div class="my-10 rounded-lg overflow-hidden bg-white shadow-lg">
+          <!-- Tabs -->
           <div class="bg-[#323232] text-[rgba(255,255,255,0.4)] p-4 md:py-10">
             <ul
               class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-20 uppercase"
             >
               <li
-                class="md:text-lg font-semibold cursor-pointer text-white hover:text-white duration-300"
+                class="tab-item md:text-lg font-semibold cursor-pointer text-white duration-300 active-tab"
+                data-target="mains"
               >
                 Mains
               </li>
               <li
-                class="md:text-lg font-semibold cursor-pointer hover:text-white duration-300"
+                class="tab-item md:text-lg font-semibold cursor-pointer hover:text-white duration-300"
+                data-target="desserts"
               >
                 Desserts
               </li>
               <li
-                class="md:text-lg font-semibold cursor-pointer hover:text-white duration-300"
+                class="tab-item md:text-lg font-semibold cursor-pointer hover:text-white duration-300"
+                data-target="drinks"
               >
                 Drinks
               </li>
             </ul>
           </div>
-          <div class="flex flex-col items-center py-15 space-y-10">
+
+          <!-- Mains -->
+          <div
+            class="tab-content mains opacity-100 transition-opacity duration-500 flex flex-col items-center py-15 space-y-10"
+          >
             <div class="max-w-3xl space-y-2 p-4">
               <p class="text-lg font-medium text-[#41A451]">$10.89</p>
               <h4
                 class="text-2xl"
                 style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
               >
-                Aperol Spritz
+                Grilled Chicken
               </h4>
               <p class="text-[rgba(21,21,21,0.8)] font-light">
-                The most popular drink in Venice: refreshing, easygoing &…happy!
-                Perfect to be sipped as an “Aperitivo” just before dinner -
-                delightful!
+                Tender grilled chicken served with seasonal vegetables.
               </p>
             </div>
             <div class="max-w-3xl space-y-2 p-4">
@@ -491,12 +497,10 @@
                 class="text-2xl"
                 style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
               >
-                Aperol Spritz
+                Grilled Chicken
               </h4>
               <p class="text-[rgba(21,21,21,0.8)] font-light">
-                The most popular drink in Venice: refreshing, easygoing &…happy!
-                Perfect to be sipped as an “Aperitivo” just before dinner -
-                delightful!
+                Tender grilled chicken served with seasonal vegetables.
               </p>
             </div>
             <div class="max-w-3xl space-y-2 p-4">
@@ -505,12 +509,10 @@
                 class="text-2xl"
                 style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
               >
-                Aperol Spritz
+                Grilled Chicken
               </h4>
               <p class="text-[rgba(21,21,21,0.8)] font-light">
-                The most popular drink in Venice: refreshing, easygoing &…happy!
-                Perfect to be sipped as an “Aperitivo” just before dinner -
-                delightful!
+                Tender grilled chicken served with seasonal vegetables.
               </p>
             </div>
             <div class="max-w-3xl space-y-2 p-4">
@@ -519,16 +521,147 @@
                 class="text-2xl"
                 style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
               >
+                Grilled Chicken
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                Tender grilled chicken served with seasonal vegetables.
+              </p>
+            </div>
+          </div>
+
+          <!-- Desserts -->
+          <div
+            class="tab-content desserts hidden opacity-0 transition-opacity duration-500 flex flex-col items-center py-15 space-y-10"
+          >
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$6.50</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Chocolate Lava Cake
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                A rich chocolate cake with molten center, served warm.
+              </p>
+            </div>
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$6.50</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Chocolate Lava Cake
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                A rich chocolate cake with molten center, served warm.
+              </p>
+            </div>
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$6.50</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Chocolate Lava Cake
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                A rich chocolate cake with molten center, served warm.
+              </p>
+            </div>
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$6.50</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Chocolate Lava Cake
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                A rich chocolate cake with molten center, served warm.
+              </p>
+            </div>
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$6.50</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Chocolate Lava Cake
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                A rich chocolate cake with molten center, served warm.
+              </p>
+            </div>
+          </div>
+
+          <!-- Drinks -->
+          <div
+            class="tab-content drinks hidden opacity-0 transition-opacity duration-500 flex flex-col items-center py-15 space-y-10"
+          >
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$4.50</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
                 Aperol Spritz
               </h4>
               <p class="text-[rgba(21,21,21,0.8)] font-light">
-                The most popular drink in Venice: refreshing, easygoing &…happy!
-                Perfect to be sipped as an “Aperitivo” just before dinner -
-                delightful!
+                The most popular drink in Venice: refreshing and delightful!
+              </p>
+            </div>
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$4.50</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Aperol Spritz
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                The most popular drink in Venice: refreshing and delightful!
+              </p>
+            </div>
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$4.50</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Aperol Spritz
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                The most popular drink in Venice: refreshing and delightful!
+              </p>
+            </div>
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$4.50</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Aperol Spritz
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                The most popular drink in Venice: refreshing and delightful!
+              </p>
+            </div>
+            <div class="max-w-3xl space-y-2 p-4">
+              <p class="text-lg font-medium text-[#41A451]">$4.50</p>
+              <h4
+                class="text-2xl"
+                style="font-family: 'PT Serif', 'Times New Roman', Times, serif"
+              >
+                Aperol Spritz
+              </h4>
+              <p class="text-[rgba(21,21,21,0.8)] font-light">
+                The most popular drink in Venice: refreshing and delightful!
               </p>
             </div>
           </div>
         </div>
+
         <div class="text-center mt-3">
           <a
             href="#"
@@ -847,5 +980,6 @@
         }
       });
     </script>
+    <script src="./assets/js/menu-tab.js"></script>
   </body>
 </html>
